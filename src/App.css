@@ -1,14 +1,10 @@
-.app {
-  min-height: 100dvh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 1rem;
-}
-
-.logo 
+.code 
 {
-  margin-bottom: 2rem;
-  height: 100px;
+    font-family: monospace;
+    font-style: italic;
+    font-weight: 300;
+    padding: 0.2rem 1.5rem;
+    background-color: #eee;
+    border-radius: 8px;
+    color: #646060;
 }

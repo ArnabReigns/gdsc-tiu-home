@@ -28,7 +28,7 @@ const Appbar = () => {
         bgcolor: "white",
       }}
     >
-      <Typography color={"#000c"} fontWeight={500} fontSize={"1.3rem"} >
+      <Typography color={"#000c"} fontWeight={500} fontSize={"1.3rem"}>
         GDSC Techno India University
       </Typography>
       <Box sx={{ display: "flex", gap: 3 }}>
@@ -40,7 +40,14 @@ const Appbar = () => {
       </Box>
 
       <Stack direction={"row"} gap={1}>
-        <Button variant="contained">Join Us</Button>
+        <Button
+          variant="contained"
+          LinkComponent={"a"}
+          href="https://gdsc.community.dev/techno-india-university-kolkata/"
+          target="_BLANK"
+        s>
+          Join Us
+        </Button>
       </Stack>
     </Box>
   );

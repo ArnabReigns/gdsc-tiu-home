@@ -1,10 +1,10 @@
-import { Box, Typography } from "@mui/material";
+import { Box, Button, Typography } from "@mui/material";
 import React from "react";
 
 const Home = () => {
   return (
     <Box p={4}>
-      <Box>
+      <Box height={"80vh"} className="hero">
         <Typography
           sx={{
             fontWeight: 500,
@@ -12,7 +12,7 @@ const Home = () => {
           }}
         >
           Welcome to <span style={{ color: "#EB4132" }}>Google </span>
-          <span style={{ color: "#4086F4" }}>Developer </span> <br/>
+          <span style={{ color: "#4086F4" }}>Developer </span> <br />
           <span style={{ color: "#069E56" }}>Students </span>
           <span style={{ color: "#FABC00" }}>Club </span>of{" "}
           <span>Techno India University</span>
@@ -35,6 +35,16 @@ const Home = () => {
           us as we proudly become a beacon of innovation among the select
           institutions chosen for this prestigious program.
         </Typography>
+
+        <Button
+          variant="contained"
+          sx={{ fontSize: "1.3rem", mt: 3, fontFamily: "monospace " }}
+          LinkComponent={"a"}
+          href="https://gdsc.community.dev/techno-india-university-kolkata/"
+          target="_BLANK"
+        >
+          Join Our Journey
+        </Button>
       </Box>
     </Box>
   );

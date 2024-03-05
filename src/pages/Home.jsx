@@ -1,18 +1,26 @@
-import { Box, Button, Typography } from "@mui/material";
+import {
+  Box,
+  Button,
+  Typography,
+  useMediaQuery,
+  useTheme,
+} from "@mui/material";
 import React from "react";
 
 const Home = () => {
+  const mb = useMediaQuery(useTheme().breakpoints.down("sm"));
+
   return (
     <Box p={4}>
-      <Box height={"80vh"} className="hero">
+      <Box className="hero">
         <Typography
           sx={{
             fontWeight: 500,
-            fontSize: "2.6rem",
+            fontSize: { md: "2.6rem", xs: "2rem" },
           }}
         >
           Welcome to <span style={{ color: "#EB4132" }}>Google </span>
-          <span style={{ color: "#4086F4" }}>Developer </span> <br />
+          <span style={{ color: "#4086F4" }}>Developer </span> {!mb && <br />}
           <span style={{ color: "#069E56" }}>Students </span>
           <span style={{ color: "#FABC00" }}>Club </span>of{" "}
           <span>Techno India University</span>

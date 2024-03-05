@@ -1,8 +1,23 @@
-import { Box, Button, ButtonGroup, Stack, Typography } from "@mui/material";
+import {
+  Box,
+  Button,
+  ButtonGroup,
+  Stack,
+  Typography,
+  useMediaQuery,
+  useTheme,
+} from "@mui/material";
 import React from "react";
 import LOGO from "/gdsc.png";
 const Appbar = () => {
+  const theme = useTheme();
+  const mb = useMediaQuery(theme.breakpoints.down("sm"));
+
   const links = [
+    {
+      name: "About Us",
+      path: "",
+    },
     {
       name: "Teams",
       path: "",
@@ -29,9 +44,10 @@ const Appbar = () => {
       }}
     >
       <Typography color={"#000c"} fontWeight={500} fontSize={"1.3rem"}>
-        GDSC Techno India University
+        {mb ? "GDSC TIU" : "GDSC Techno India University"}
       </Typography>
-      <Box sx={{ display: "flex", gap: 3 }}>
+
+      <Box sx={{ display: { xs: "none", md: "flex" }, gap: 3 }}>
         {links.map((l, i) => (
           <Button key={i} variant="text">
             {l.name}
@@ -45,7 +61,7 @@ const Appbar = () => {
           LinkComponent={"a"}
           href="https://gdsc.community.dev/techno-india-university-kolkata/"
           target="_BLANK"
-        s>
+        >
           Join Us
         </Button>
       </Stack>

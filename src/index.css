@@ -6,19 +6,19 @@
 
 @font-face {
   font-family: "google-sans";
-  src: url("fonts/GoogleSans-Regular.ttf") format("truetype");
+  src: url("./assets/fonts/GoogleSans-Regular.ttf") format("truetype");
   font-weight: 400;
 }
 
 @font-face {
   font-family: "google-sans";
-  src: url("fonts/GoogleSans-Medium.ttf") format("truetype");
+  src: url("./assets/fonts/GoogleSans-Medium.ttf") format("truetype");
   font-weight: 500;
 }
 
 @font-face {
   font-family: "google-sans";
-  src: url("fonts/GoogleSans-Bold.ttf") format("truetype");
+  src: url("./assets/fonts/GoogleSans-Bold.ttf") format("truetype");
   font-weight: 700;
 }
 
